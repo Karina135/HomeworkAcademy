@@ -1,0 +1,64 @@
+#Из строчки srt1 достасть слово Academy Top
+str1 = "AbaTcodmpye"
+print(str1[0] + str1[4] + str1[2] + str1[6] + str1[10] + str1[7] + str1[9] , str1[3] + str1[5] + str1[8])
+
+#из строки str2 вывести "I like indexes"
+str2 = "I Say life it is not my fight, men dont is a knights, she answer, that 'Excellent'"
+print(str2[0], str2[6]+str2[7] + str2[45] + str2[9], str2[7] + str2[17] + str2[35] + str2[9] + str2[73] + str2[9] + str2[15] )
+
+# Вывести из str3 свои фамилию и имя
+list3 = ["Любя", "съешь щипцы", "— вздохнёт мэр", "— кайф жгуч."]
+print(list3[-1][-2]+list3[-3][2] + list3[-2][-1] + list3[-2][-5] + list3[-1][2] + list3[-2][5] + list3[-2][2] +
+      list3[-1][3], list3[-1][2] + list3[-1][3] + list3[-2][-1] + list3[-3][-4] + list3[-2][-7] + list3[-1][3])
+
+# из строки str4 вывести "как сделать следующее задание"
+str4 = "В чащах юга жил бы цитрус? Да, но фальшивый экземпляр!"
+print(str4[-9] + str4[3] + str4[-9], str4[24] + str4[27] + str4[47] +str4[50] + str4[28] + str4[21] + str4[-17] ,
+      str4[24] + str4[36] + str4[-7] + str4[27] + str4[23] + str4[8] + str4[4] + str4[-7] + str4[-7],
+      str4[-8] + str4[3] + str4[27] + str4[3] + str4[31] + str4[13] + str4[-7])
+
+# из строки списка list5 вывести Turtle and Crocodile
+# если где-то не хватает какой-то буквы, то добавьте с указанием недостоющей буквы
+list5 = ["Ребята удачи понять где какой индекс :)",
+['r', 'T', 'u','n', [[[[[[[['r'], ['STOP it PLEASE'],
+[[[[["<- Маленькую английскую буквы Т нужно досдать из фразы слева", 'e'],
+[3.14], [[1.125]], "зачем в этом задании столько скобок?"], [[['o'],
+[1.000000001], [1], ], ['t']]], [17]]], ['C']], 'WHY?'], [True]], [2.71]], []],
+['d', [["What Index?"]]]], '1']], ["l"]]
+print(list5[1][1] + list5[1][2] + list5[1][0] + list5[1][1] + list5[-1][0] + list5[0][1],
+      list5[0][5] + list5[-2][3] + list5[0][8], list5[0][-4] + list5[1][0] + list5[0][14] + list5[0][-4] +
+      list5[0][14] + list5[0][8] + list5[0][5] + list5[-1][0] + list5[0][1])
+
+#Найти самое длинное общее слово из двух любых предложений
+sentence1 = "Однажды Эрнест Хемингуэй поспорил, что сможет написать самую короткую программу, способную решить любого задачу. Он выиграл спор, написав программу из шести строк..."
+sentence2 = """Я вас любил: любовь еще, быть может,
+В душе моей угасла не совсем;
+Но пусть она вас больше не тревожит"""
+sentense1 = []
+sentence2 = []
+count_index = 0
+if (sentense2[i] != ',' and sentense2[i] != '.' and sentense2[i] !='?' and sentense2[i] != ' '
+and sentense2[i] != '\n' and sentense2[i] != ':' and sentense2[i] != ';' and sentense2[i] != '!'):
+
+for i in range(len(sentense1 + sentence2)):
+count_index += 1
+if count_index != 0:
+sentense1.append(count_index)
+sentense2.append(count_index)
+count_index = 0
+
+print(sentense1)
+k = 0
+count = 1
+max = 0
+for i in range(len(sentense1) - 2):
+k = list2[i+1] - list2[i]
+for j in range (i, (len(list2) - 2)):
+if(list2[j] + k ) == (list2[j+1]):
+count += 1
+else:
+break
+if max < count:
+max = count
+count = 1
+print(max)
